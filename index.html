@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEKBUKU</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-head">
+                <div class="nav-logo">
+                    <h2>Redsgram</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="search" id="" placeholder="Cari">
+                    </div>
+                    <div class="nav-notif" id="navtaf">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="nav-notif-grup" id="popup">
+                            <h2>Notifikasi</h2>
+                            <div class="nav-req">
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="nav-req-foll">
+                                    <b>Permintaan mengikuti</b>
+                                    <small class="text-muted">niko5tp</small>
+                                </div>
+                                <div class="nav-more">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <h4>Minggu Ini</h4>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="nav-notif-body">
+                                    <b>niko5tp</b> Menyukai komentar anda.
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                <div class="nav-liked-photo">
+                                    <img src="assets/postlike1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/andy.jpg" alt="">
+                                </div>
+                                <div class="nav-notif-body">
+                                    <b>napes_g</b> Mulai menggikuti anda
+                                    <small class="text-muted">2 Hari</small>
+                                </div>
+                                    <a href="" class="btn-secondary">Diikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/fatihi.jpg" alt="">
+                                </div>
+                                <div class="nav-notif-body">
+                                    <b>fatihigt_3407</b> Mulai menggikuti anda
+                                    <small class="text-muted">3 Hari</small>
+                                </div>
+                                    <a href="" class="btn-primary">Ikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/rafiezp.jpg" alt="">
+                                </div>
+                                <div class="nav-notif-body">
+                                    <b>rafiezp</b> Mulai menggikuti anda
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                    <a href="" class="btn-primary">Ikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="nav-notif-body">
+                                    <b>niko5tp</b> Mulai menggikuti anda
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                <div class="konfirmasi">
+                                    <a href="" class="btn-primary">Konfirmasi</a>
+                                </div>
+                                <div class="hapus">
+                                    <a href="" class="btn-secondary">Hapus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <!-- LEFT -->
+            <div class="left">
+                <div class="logo">
+                    <h2>Redsgram</h2>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                    <div class="btn-aside active">
+                        <a><i class="fa-solid fa-house"></i><span>Beranda</span></a>
+                    </div>
+                    <div class="btn-aside">
+                        <a><i class="fa-solid fa-magnifying-glass"></i><span>Cari</span></a>
+                    </div>
+                    <div class="btn-aside">
+                        <a><i class="fa-regular fa-compass"></i><span>Jelajahi</span></a>
+                    </div>
+                    <div class="btn-aside">
+                        <a><i class="fa-solid fa-clapperboard"></i><span>Reels</span></a>
+                    </div>
+                    <div class="btn-aside">
+                        <a><i class="fa-regular fa-comment"><small class="notif-count">2</small></i><span>Pesan</span></a>
+                    </div>
+                    <div class="btn-aside" id="notif">
+                        <a><i class="fa-regular fa-heart"><small class="notif-count">9+</small></i><span>Notifikasi</span></a>
+                        <!-- NOTIFIKASI PUPUP -->
+                        <div class="notif-grup">
+                            <h2>Notifikasi</h2>
+                            <div class="req">
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="req-foll">
+                                    <b>Permintaan mengikuti</b>
+                                    <small class="text-muted">niko5tp</small>
+                                </div>
+                                <div class="more">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <h4>Minggu Ini</h4>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="notif-body">
+                                    <b>niko5tp</b> Menyukai komentar anda.
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                <div class="liked-photo">
+                                    <img src="assets/postlike1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/andy.jpg" alt="">
+                                </div>
+                                <div class="notif-body">
+                                    <b>napes_g</b> Mulai menggikuti anda
+                                    <small class="text-muted">2 Hari</small>
+                                </div>
+                                    <a href="" class="btn-secondary">Diikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/fatihi.jpg" alt="">
+                                </div>
+                                <div class="notif-body">
+                                    <b>fatihigt_3407</b> Mulai menggikuti anda
+                                    <small class="text-muted">3 Hari</small>
+                                </div>
+                                    <a href="" class="btn-primary">Ikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/rafiezp.jpg" alt="">
+                                </div>
+                                <div class="notif-body">
+                                    <b>rafiezp</b> Mulai menggikuti anda
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                    <a href="" class="btn-primary">Ikuti</a>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="assets/niko5tp.jpg" alt="">
+                                </div>
+                                <div class="notif-body">
+                                    <b>niko5tp</b> Mulai menggikuti anda
+                                    <small class="text-muted">1 minggu</small>
+                                </div>
+                                <div class="konfirmasi">
+                                    <a href="" class="btn-primary">Konfirmasi</a>
+                                </div>
+                                <div class="hapus">
+                                    <a href="" class="btn-secondary">Hapus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-aside">
+                        <a><i class="fa-regular fa-square-plus"></i><span>Buat</span></a>
+                    </div>
+                    <div class="btn-aside">
+                        <div class="profile-photos">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                    <span>Profile</span>
+                    </div>
+                    <div class="btn-aside"  id="lainnya">
+                        <a><i class="fa-solid fa-bars"></i><span>Lainnya</span></a>
+                    </div>
+
+            </div>
+            <!-- MIDDLE -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/myprofile.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>yo.leftright</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/niko5tp.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>niko5tp</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/nonephoto.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>farhan_farozy</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/rafiezp.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>rafiezp</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/nonephoto.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>izffaaa</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/nonephoto.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>miawuwu</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/andy.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>napes_g</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/fatihi.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>fatihigt_3407</p>
+                    </div>
+                    <div class="story">
+                        <div class="cont">
+                            <div class="profile-photo">
+                                <img src="assets/niko5tp.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>niko5tp</p>
+                    </div>
+                </div>
+
+                <!-- POSTINGAN  -->
+                <div class="posts">
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/myprofile.jpg" alt="">
+                                </div>
+                                <div class="username">
+                                    <p><b>gojoXkiko </b>• 1 minggu •<span class="ikuti"> Ikuti</span></p>
+                                </div>
+                                <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                        <div class="photo-post">
+                            <img src="assets/gojo.jfif" alt="">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="assets/nonephoto.jpg" alt=""></span>
+                            <span><img src="assets/niko5tp.jpg" alt=""></span>
+                            <span><img src="assets/myprofile.jpg" alt=""></span>
+                            <p>Disukai oleh <b>niko5tp</b> dan <b>9.999 Lainnya</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>gojoXkiko</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, magni?</p>
+                        </div>
+                        <div class="text-muted">Lihat semua 999 komentar</div>
+                        <div class="text-muted">Tambahkan komentar...</div>
+                    </div>
+                    <hr>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="assets/sukuna.jfif" alt="">
+                                </div>
+                                <div class="username">
+                                    <p><b>sukuna </b>• 1 minggu •<span class="ikuti"> Ikuti</span></p>
+                                </div>
+                                <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                        <div class="video-post">
+                            <video src="assets/sukuna.mp4" controls></video>
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="assets/nonephoto.jpg" alt=""></span>
+                            <span><img src="assets/niko5tp.jpg" alt=""></span>
+                            <span><img src="assets/myprofile.jpg" alt=""></span>
+                            <p>Disukai oleh <b>niko5tp</b> dan <b>9.999 Lainnya</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>sukuna</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, magni?</p>
+                        </div>
+                        <div class="text-muted">Lihat semua 999 komentar</div>
+                        <div class="text-muted">Tambahkan komentar...</div>
+                    </div>
+                    <hr>
+                    <div class="last-post">
+                        <div class="confirm-img">
+                            <img src="assets/confirm.png" alt="">
+                        </div>
+                        <div class="confirm-text">
+                            <b>Anda sudah melihat semuanya</b>
+                            <div class="text-muted">Anda sudah melihat semua postingan 3 hari yang lalu</div>
+                            <a href="">Lihat postingan lainnya</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="right">
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Alihkan</a>
+                    </div>
+                </div>
+                <div class="right-seemore">
+                    <div class="foryou">
+                        <b class="text-muted">Disarankan untuk anda</b>
+                    </div>
+                    <div class="seemore">
+                        <a href=""><b>Lihat Semua</b></a>
+                    </div>
+                </div>
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b><br>
+                            <small class="text-muted">Disarankan untuk anda</small>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Ikuti</a>
+                    </div>
+                </div>
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b><br>
+                            <small class="text-muted">Disarankan untuk anda</small>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Ikuti</a>
+                    </div>
+                </div>
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b><br>
+                            <small class="text-muted">Disarankan untuk anda</small>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Ikuti</a>
+                    </div>
+                </div>
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b><br>
+                            <small class="text-muted">Disarankan untuk anda</small>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Ikuti</a>
+                    </div>
+                </div>
+                <div class="right-profil">
+                    <div class="right-user">
+                        <div class="profile-photo">
+                            <img src="assets/myprofile.jpg" alt="">
+                        </div>
+                        <div class="right-username">
+                            <b>yo.leftright</b><br>
+                            <small class="text-muted">Disarankan untuk anda</small>
+                        </div>
+                    </div>
+                    <div class="right-ikuti">
+                        <a href="" class="">Ikuti</a>
+                    </div>
+                </div>
+                <div class="right-footer">
+                    <div class="right-footerhead">
+                    <a href="">Tentang</a>
+                    <a href="">Bantuan</a>
+                    <a href="">Pers</a>
+                    <a href="">API</a>
+                    <a href="">Pekerjaan</a>
+                    <a href="">Privasi</a>
+                    <a href="">Ketentuan</a>
+                    <a href="">Lokasi</a>
+                    <a href="">Bahasa</a>
+                    <a href="">Verifikasi Meta</a>
+                    </div>
+                    <div class="right-copyright">
+                        <a href="">© 2023 REDSGRAM FROM LOVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- LIGHT WHITE DAN BAHASA  -->
+    <div class="custom-theme">
+        <div class="card">
+            <h2 class="en">Kustomisasi Redsgram kamu</h2>
+            <p class="text-muted">Atur Bahasa serta tema kamu</p>
+
+            <!-- TEMA -->
+            <div class="bahasa">
+                <h4>Pilih Bahasa</h4>
+                <div>
+                    <div class="pilih-bahasa">
+                        <span class="lang active" language="ID">Indonesia</span>
+                        <span class="lang" language="EN">English</span>
+                        <span class="lang" language="JP">Jepang</span>
+                        <span class="lang" language="KR">Korea</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tema-website">
+                <h4>Tema Website</h4>
+                <div class="pilih-tema">
+                    <span class="color-1 active">Biru</span>
+                    <span class="color-2">Merah</span>
+                    <span class="color-3">Ungu</span>
+                    <span class="color-4">Pink</span>
+                    <span class="color-5">Hijau</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<footer>
+    <div class="footer">
+        <div class="footer-head">
+            <div class="btn-footer">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="btn-footer">
+                <i class="fa-regular fa-compass"></i>
+            </div>
+            <div class="btn-footer">
+                <i class="fa-solid fa-clapperboard"></i>
+            </div>
+            <div class="btn-footer">
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <div class="btn-footer">
+                <i class="fa-regular fa-comment"><small class="notif-count">2</small></i>
+            </div>
+            <div class="btn-footer" id="lainnyo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>
